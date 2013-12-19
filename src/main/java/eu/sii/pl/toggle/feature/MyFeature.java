@@ -9,7 +9,6 @@ import org.togglz.core.annotation.Label;
  */
 public enum MyFeature implements Feature {
     @Label("First")
-    @EnabledByDefault
     FIRST,
 
     @Label("Second")

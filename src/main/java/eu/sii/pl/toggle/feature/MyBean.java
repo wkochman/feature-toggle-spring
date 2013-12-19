@@ -11,5 +11,8 @@ public class MyBean {
         if(MyFeature.FIRST.isActive()){
             System.out.println("Feature 1");
         }
+        if(MyFeature.SECOND.isActive()){
+            System.out.println("Feature 2");
+        }
     }
 }

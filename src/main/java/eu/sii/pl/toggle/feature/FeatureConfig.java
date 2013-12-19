@@ -13,7 +13,6 @@ import java.io.File;
 /**
  * Created by wkochman on 19.12.13.
  */
-@Component
 public class FeatureConfig implements TogglzConfig{
     @Override
     public Class<? extends Feature> getFeatureClass() {
