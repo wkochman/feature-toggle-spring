@@ -7,12 +7,19 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MyBean {
-    public void featureTest(){
-        if(MyFeature.FIRST.isActive()){
-            System.out.println("Feature 1");
-        }
-        if(MyFeature.SECOND.isActive()){
-            System.out.println("Feature 2");
+    public void featureTest() {
+        for (int i = 0; i < 3; i++) {
+            if (MyFeature.FIRST.isActive()) {
+                System.out.println("Feature 1");
+            }
+            if (MyFeature.SECOND.isActive()) {
+                System.out.println("Feature 2");
+            }
+            try {
+                Thread.currentThread().sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

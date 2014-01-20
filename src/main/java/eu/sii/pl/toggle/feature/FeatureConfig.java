@@ -11,7 +11,7 @@ import org.togglz.core.user.UserProvider;
 import java.io.File;
 
 /**
- * Created by wkochman on 19.12.13.
+ * Created by wkochman on 19.12.13. wkochman@pl.sii.eu
  */
 public class FeatureConfig implements TogglzConfig{
     @Override
